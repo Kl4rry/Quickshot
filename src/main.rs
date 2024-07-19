@@ -70,7 +70,7 @@ async fn main() -> anyhow::Result<()> {
         let man = clap_mangen::Man::new(get_clap_command());
         let mut buffer: Vec<u8> = Vec::new();
         man.render(&mut buffer)?;
-        tokio::fs::write("quickshot.1", buffer).await?;
+        tokio::io::stdout().write_all(&buffer).await?;
         return Ok(());
     }
 

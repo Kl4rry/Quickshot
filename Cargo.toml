@@ -1,7 +1,13 @@
 [package]
 name = "quickshot"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+license = "BSD-3-Clause"
+description = "A simple xdg-desktop-portal based screenshot tool"
+repository = "https://github.com/Kl4rry/Quickshot"
+homepage = "https://github.com/Kl4rry/Quickshot"
+docs = "https://github.com/Kl4rry/Quickshot"
+authors = ["Axel Kappel"]
 
 [dependencies]
 anyhow = "1.0.86"
