@@ -71,5 +71,8 @@ AUTHORS
 
 ## Installation
 ```
+paru -S quickshot
+```
+```
 cargo install quickshot
 ```
