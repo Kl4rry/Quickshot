@@ -3,6 +3,23 @@ A simple xdg-desktop-portal based screenshot tool
 
 Supports any desktop with a screenshot portal it does not matter if its x11 or wayland.
 
+## Examples
+Take screenshot of whole screen and save in ~/Pictures/Screenshots/
+```
+quickshot -o "$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y%m%d-%Hh%Mm%Ss)_quickshot.png"
+```
+
+Take screenshot of part of screen and save in ~/Pictures/Screenshots/
+```
+quickshot -imo "$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y%m%d-%Hh%Mm%Ss)_quickshot.png"
+```
+
+Take screenshot of part of screen and pipe into image viewer
+```
+quickshot -impe simp
+```
+
+## Manual
 ```
 quickshot(1)
 
