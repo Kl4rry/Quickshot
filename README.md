@@ -5,17 +5,17 @@ Supports any desktop with a screenshot portal it does not matter if its x11 or w
 
 ## Examples
 Take screenshot of whole screen and save in ~/Pictures/Screenshots/
-```
+```shell
 quickshot -o "$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y%m%d-%Hh%Mm%Ss)_quickshot.png"
 ```
 
 Take screenshot of part of screen and save in ~/Pictures/Screenshots/
-```
+```shell
 quickshot -imo "$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y%m%d-%Hh%Mm%Ss)_quickshot.png"
 ```
 
 Take screenshot of part of screen and pipe into image viewer
-```
+```shell
 quickshot -impe simp
 ```
 
@@ -70,9 +70,11 @@ AUTHORS
 ```
 
 ## Installation
-```
+### Arch
+```shell
 paru -S quickshot
 ```
-```
+### Cargo
+```shell
 cargo install quickshot
 ```
