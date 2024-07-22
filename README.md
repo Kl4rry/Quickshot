@@ -1,7 +1,11 @@
 # Quickshot
-A simple xdg-desktop-portal based screenshot tool
+A simple xdg-desktop-portal based screenshot tool. Because quickshot uses xdg-portals it works on both x11 and wayland.
 
-Supports any desktop with a screenshot portal it does not matter if its x11 or wayland.
+## Compatible desktop portals
+* Hyprland
+* wlroots
+* KDE
+* Gnome
 
 ## Examples
 Take screenshot of whole screen and save in ~/Pictures/Screenshots/
